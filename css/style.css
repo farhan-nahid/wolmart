@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,15 @@
           box-sizing: border-box;
 }
 
-a {
+a,
+span,
+input,
+textarea,
+button {
   display: inline-block;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -24,18 +32,345 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+section,
+div {
   margin: 0;
   padding: 0;
 }
 
-/* ==================================
+/* ======================================
              common css end
 ======================================*/
 /* ==================================
-             common css end
+             Index Page start
 ======================================*/
 /* ==================================
-             common css end
+             Header area start
+======================================*/
+#header {
+  height: 45px;
+  background-color: #f5f6f8;
+}
+
+#header .left__header p {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 45px;
+}
+
+#header .right__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header .right__header .top__dropdown {
+  margin-left: 20px;
+}
+
+#header .right__header .top__dropdown li {
+  cursor: pointer;
+  position: relative;
+}
+
+#header .right__header .top__dropdown li a {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 45px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#header .right__header .top__dropdown li a i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#header .right__header .top__dropdown li ul {
+  text-align: center;
+  background-color: #f5f6f8;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  position: absolute;
+  left: 0;
+  width: 45px;
+}
+
+#header .right__header .top__dropdown li ul li a {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 30px;
+}
+
+#header .right__header .top__dropdown li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#header .right__header .header__before {
+  position: relative;
+  padding-right: 35px;
+}
+
+#header .right__header .header__before::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: rgba(51, 51, 51, 0.637);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+#header .right__header .header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .right__header .header__item li {
+  margin-left: 25px;
+}
+
+#header .right__header .header__item li:nth-child(1) {
+  margin-left: 35px;
+}
+
+#header .right__header .header__item li:nth-child(3) {
+  margin-right: 25px;
+}
+
+#header .right__header .header__item li a {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 45px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#header .right__header .header__item li a:hover {
+  color: #336699;
+}
+
+#header .right__header .signIn__register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .right__header .signIn__register li {
+  position: relative;
+}
+
+#header .right__header .signIn__register li a {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 45px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  margin: 0 10px;
+}
+
+#header .right__header .signIn__register li a i {
+  margin-right: 8px;
+}
+
+#header .right__header .signIn__register li a:hover {
+  color: #336699;
+}
+
+#header .right__header .signIn__register li:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: #333333a2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+#header .right__header .signIn__register .auth__button {
+  color: #fff;
+  width: 100%;
+  border: 0;
+  padding: 10px 0;
+  border: 2px solid #eee;
+  outline: 0;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: color 0.3s, border-color 0.3s, background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #fff;
+  border-color: #2879fe;
+  background-color: #336699;
+}
+
+#header .right__header .signIn__register .auth__button:focus {
+  outline: 0;
+  border-color: #2977d8;
+  background-color: #2977d8;
+}
+
+#header .right__header .signIn__register .auth__button:hover {
+  border-color: #2977d8;
+  background-color: #2977d8;
+}
+
+#header .right__header .signIn__register span {
+  color: #2879fe;
+  cursor: pointer;
+}
+
+#header .right__header .signIn__register span:hover {
+  text-decoration: underline;
+}
+
+#header .right__header .signIn__register .reset__pass {
+  color: #a94442;
+  cursor: pointer;
+}
+
+#header .right__header .signIn__register .reset__pass:hover {
+  text-decoration: underline;
+}
+
+#header .right__header .signIn__register .social__link {
+  margin-top: 30px;
+}
+
+#header .right__header .signIn__register .social__link a {
+  border-radius: 50%;
+  font-size: 14px;
+  margin: 0 5px;
+  height: auto;
+  display: inline;
+  text-align: center;
+}
+
+#header .right__header .signIn__register .social__link a:hover {
+  color: #fff !important;
+}
+
+#header .right__header .signIn__register .social__link a:nth-child(1) {
+  padding: 8px 5px 8px 12px;
+  border: 1px solid #1b4f9b;
+  color: #1b4f9b;
+}
+
+#header .right__header .signIn__register .social__link a:nth-child(1):hover {
+  background: #1b4f9b;
+}
+
+#header .right__header .signIn__register .social__link a:nth-child(2) {
+  padding: 8px 2px 8px 10px;
+  border: 1px solid #00adef;
+  color: #00adef;
+}
+
+#header .right__header .signIn__register .social__link a:nth-child(2):hover {
+  background: #00adef;
+}
+
+#header .right__header .signIn__register .social__link a:nth-child(3) {
+  padding: 8px 3px 8px 10px;
+  border: 1px solid #dd4b39;
+  color: #dd4b39;
+}
+
+#header .right__header .signIn__register .social__link a:nth-child(3):hover {
+  background: #dd4b39;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #0d6efd;
+  background-color: transparent;
+}
+
+.nav-link {
+  color: #333;
+}
+
+/* ==================================
+            Header area end
+======================================*/
+/* ==================================
+             Header area start
+======================================*/
+/* ==================================
+             Header area end
+======================================*/
+/* ==================================
+             Header area start
+======================================*/
+/* ==================================
+             Header area end
+======================================*/
+/* ==================================
+             Header area start
+======================================*/
+/* ==================================
+             Header area end
+======================================*/
+/* ==================================
+             Header area start
+======================================*/
+/* ==================================
+             Header area end
+======================================*/
+/* ==================================
+             Index Page end
+======================================*/
+/* ==================================
+             Index Page start
+======================================*/
+/* ==================================
+             Index Page end
+======================================*/
+/* ==================================
+             Index Page start
+======================================*/
+/* ==================================
+             Index Page end
+======================================*/
+/* ==================================
+             Index Page start
+======================================*/
+/* ==================================
+             Index Page end
+======================================*/
+/* ==================================
+             Index Page start
+======================================*/
+/* ==================================
+             Index Page end
 ======================================*/
 /*# sourceMappingURL=style.css.map */

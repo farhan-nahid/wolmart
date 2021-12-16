@@ -1,0 +1,208 @@
+@import '../mixins/fontStyles';
+
+#header {
+  height: 45px;
+  background-color: #f5f6f8;
+  .left__header {
+    p {
+      @include fontStyle(12px, #333, 400, 'Poppins');
+      line-height: 45px;
+    }
+  }
+
+  .right__header {
+    display: flex;
+    justify-content: flex-end;
+    .top__dropdown {
+      margin-left: 20px;
+      li {
+        cursor: pointer;
+        position: relative;
+        a {
+          @include fontStyle(12px, #333, 400, 'Poppins');
+          line-height: 45px;
+          transition: all linear 0.3s;
+          i {
+            margin-left: 5px;
+            cursor: pointer;
+          }
+        }
+
+        ul {
+          text-align: center;
+          background-color: #f5f6f8;
+          visibility: hidden;
+          opacity: 0;
+          transition: all linear 0.3s;
+          position: absolute;
+          left: 0;
+          width: 45px;
+          li {
+            a {
+              @include fontStyle(12px, #333, 400, 'Poppins');
+              line-height: 30px;
+            }
+          }
+        }
+        &:hover ul {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    .header__before {
+      position: relative;
+      padding-right: 35px;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 1px;
+        background-color: rgba(51, 51, 51, 0.637);
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+    }
+    .header__item {
+      display: flex;
+      li {
+        margin-left: 25px;
+        &:nth-child(1) {
+          margin-left: 35px;
+        }
+        &:nth-child(3) {
+          margin-right: 25px;
+        }
+        a {
+          @include fontStyle(12px, #333, 400, 'Poppins');
+          line-height: 45px;
+          transition: all linear 0.3s;
+          &:hover {
+            color: #336699;
+          }
+        }
+      }
+    }
+    .signIn__register {
+      display: flex;
+      li {
+        position: relative;
+        a {
+          @include fontStyle(12px, #333, 400, 'Poppins');
+          line-height: 45px;
+          transition: all linear 0.3s;
+          margin: 0 10px;
+          i {
+            margin-right: 8px;
+          }
+          &:hover {
+            color: #336699;
+          }
+        }
+        &:nth-child(1)::before {
+          content: '';
+          position: absolute;
+          height: 20px;
+          width: 1px;
+          background-color: #333333a2;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+        }
+      }
+      .auth__button {
+        color: #fff;
+        width: 100%;
+        border: 0;
+        padding: 10px 0;
+        border: 2px solid #eee;
+        outline: 0;
+        border-radius: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: center;
+        transition: color 0.3s, border-color 0.3s, background-color 0.3s,
+          box-shadow 0.3s;
+        white-space: nowrap;
+        cursor: pointer;
+        color: #fff;
+        border-color: #2879fe;
+        background-color: #336699;
+        &:focus {
+          outline: 0;
+          border-color: #2977d8;
+          background-color: #2977d8;
+        }
+        &:hover {
+          border-color: #2977d8;
+          background-color: #2977d8;
+        }
+      }
+      span {
+        color: #2879fe;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .reset__pass {
+        color: #a94442;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .social__link {
+        margin-top: 30px;
+        a {
+          border-radius: 50%;
+          font-size: 14px;
+          margin: 0 5px;
+          height: auto;
+          display: inline;
+          text-align: center;
+          &:hover {
+            color: #fff !important;
+          }
+          &:nth-child(1) {
+            padding: 8px 5px 8px 12px;
+            border: 1px solid #1b4f9b;
+            color: #1b4f9b;
+          }
+          &:nth-child(1):hover {
+            background: #1b4f9b;
+          }
+          &:nth-child(2) {
+            padding: 8px 2px 8px 10px;
+            border: 1px solid #00adef;
+            color: #00adef;
+          }
+          &:nth-child(2):hover {
+            background: #00adef;
+          }
+          &:nth-child(3) {
+            padding: 8px 3px 8px 10px;
+            border: 1px solid #dd4b39;
+            color: #dd4b39;
+          }
+          &:nth-child(3):hover {
+            background: #dd4b39;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #0d6efd;
+  background-color: transparent;
+}
+
+.nav-link {
+  color: #333;
+}
