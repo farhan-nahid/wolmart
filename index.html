@@ -502,13 +502,30 @@
     
     -->
 
-    <section id="logo__area" class="container">
+    <section id="logo__area" class="container px-lg-0">
       <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-2 d-flex align-items-center">
           <img src="./images/logo.png" alt="logo" />
         </div>
-        <div class="col-lg-5"></div>
-        <div class="col-lg-5"></div>
+        <div class="col-lg-5 d-flex align-items-center">
+          <div class="search__bar">
+            <select>
+              <option value="0">All Categories</option>
+              <option class="level-0" value="fashion">Fashion</option>
+              <option class="level-0" value="furniture">Furniture</option>
+              <option class="level-0" value="shoes">Shoes</option>
+              <option class="level-0" value="sports">Sports</option>
+              <option class="level-0" value="games">Games</option>
+              <option class="level-0" value="computers">Computers</option>
+              <option class="level-0" value="electronics">Electronics</option>
+              <option class="level-0" value="kitchen">Kitchen</option>
+              <option class="level-0" value="clothing">Clothing</option>
+            </select>
+            <input type="text" placeholder="search  in ...." />
+            <img src="./images/search.svg" alt="search" />
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex align-items-center"></div>
       </div>
     </section>
 

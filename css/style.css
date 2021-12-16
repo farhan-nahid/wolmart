@@ -330,11 +330,85 @@ div {
              logo area start
 ======================================*/
 #logo__area {
-  padding: 30px 0;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #logo__area img {
   width: 144px;
+}
+
+#logo__area .search__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #336699;
+  border-radius: 3px;
+  padding: 10px 0;
+  width: 98%;
+  position: relative;
+}
+
+#logo__area .search__bar select,
+#logo__area .search__bar input {
+  border: 0;
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+#logo__area .search__bar select:focus,
+#logo__area .search__bar input:focus {
+  outline: 0;
+}
+
+#logo__area .search__bar select {
+  margin-right: 20px;
+  padding-right: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-family: inherit;
+}
+
+#logo__area .search__bar input {
+  width: 100%;
+  font-family: inherit;
+  display: block;
+}
+
+#logo__area .search__bar input::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: rgba(51, 51, 51, 0.637);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+#logo__area .search__bar img {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
 }
 
 /* ==================================
