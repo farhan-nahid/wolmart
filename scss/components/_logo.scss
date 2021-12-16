@@ -30,11 +30,6 @@
       padding-left: 20px;
       position: relative;
       font-family: inherit;
-    }
-    input {
-      width: 100%;
-      font-family: inherit;
-      display: block;
       &::before {
         content: '';
         position: absolute;
@@ -46,6 +41,10 @@
         left: 0;
       }
     }
+    input {
+      width: 100%;
+      font-family: inherit;
+    }
     img {
       cursor: pointer;
       position: absolute;
@@ -53,6 +52,74 @@
       right: 10px;
       transform: translateY(-50%);
       width: 20px;
+    }
+  }
+  .logo__call {
+    padding: 0 70px;
+    position: relative;
+    a {
+      @include fontStyle(12px, #333, 400, 'Poppins');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all linear 0.3s;
+      i {
+        font-size: 25px;
+        margin-right: 15px;
+      }
+      &:hover {
+        color: #336699;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+      width: 1px;
+      height: 40px;
+      background-color: #33333336;
+    }
+  }
+  .logo__nav {
+    position: relative;
+    margin-right: 20px;
+    a {
+      @include fontStyle(12px, #333, 400, 'Poppins');
+      transition: all linear 0.3s;
+      text-align: center;
+      i {
+        font-size: 22px;
+        margin-right: 15px;
+        text-align: center;
+        margin: 0;
+      }
+      strong {
+        position: absolute;
+        top: -9px;
+        right: -5px;
+        color: #fff;
+        background-color: #336699;
+        border-radius: 50%;
+        padding: 2px 5px;
+      }
+      &:hover {
+        color: #336699;
+      }
+    }
+  }
+  .side__canvas {
+    position: relative;
+    h5 {
+      @include fontStyle(20px, #333, 600, 'Poppins');
+    }
+    button {
+      span {
+        position: absolute;
+        right: 46px;
+        top: 15px;
+      }
     }
   }
 }

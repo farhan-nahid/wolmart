@@ -37,7 +37,7 @@
           position: absolute;
           left: 0;
           width: 45px;
-
+          z-index: 1;
           li {
             a {
               @include fontStyle(12px, #333, 400, 'Poppins');
@@ -113,7 +113,7 @@
           width: 1px;
           background-color: #333333a2;
           top: 50%;
-          transform: translateY(-50%);
+          transform: translateY(-50%) skew(-15deg);
           right: 0;
         }
       }
