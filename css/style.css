@@ -124,6 +124,10 @@ div {
   padding-right: 35px;
 }
 
+#header .right__header .header__before li ul {
+  width: 60px;
+}
+
 #header .right__header .header__before::before {
   content: '';
   position: absolute;
@@ -323,10 +327,18 @@ div {
             Header area end
 ======================================*/
 /* ==================================
-             Header area start
+             logo area start
 ======================================*/
+#logo__area {
+  padding: 30px 0;
+}
+
+#logo__area img {
+  width: 144px;
+}
+
 /* ==================================
-             Header area end
+             logo area end
 ======================================*/
 /* ==================================
              Header area start

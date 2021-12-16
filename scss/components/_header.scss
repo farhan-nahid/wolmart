@@ -37,6 +37,7 @@
           position: absolute;
           left: 0;
           width: 45px;
+
           li {
             a {
               @include fontStyle(12px, #333, 400, 'Poppins');
@@ -53,6 +54,11 @@
     .header__before {
       position: relative;
       padding-right: 35px;
+      li {
+        ul {
+          width: 60px;
+        }
+      }
       &::before {
         content: '';
         position: absolute;
