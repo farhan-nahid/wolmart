@@ -39,15 +39,27 @@ div {
   padding: 0;
 }
 
-/* ======================================
-             common css end
-======================================*/
-/* ==================================
-             Index Page start
-======================================*/
-/* ==================================
-             Header area start
-======================================*/
+/*
+
+            ======================================
+                    Common css area End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Index Page start
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area start
+            ======================================
+
+*/
 #header {
   height: 45px;
   background-color: #f5f6f8;
@@ -324,12 +336,20 @@ div {
   color: #333;
 }
 
-/* ==================================
-            Header area end
-======================================*/
-/* ==================================
-             logo area start
-======================================*/
+/*
+
+            ======================================
+                        Header area End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        logo area start
+            ======================================
+
+*/
 #logo__area {
   height: 100px;
   display: -webkit-box;
@@ -493,6 +513,7 @@ div {
 
 #logo__area .side__canvas {
   position: relative;
+  border-bottom: 1px solid #333;
 }
 
 #logo__area .side__canvas h5 {
@@ -508,52 +529,205 @@ div {
   top: 15px;
 }
 
-/* ==================================
-             logo area end
-======================================*/
-/* ==================================
-             Header area start
-======================================*/
-/* ==================================
-             Header area end
-======================================*/
-/* ==================================
-             Header area start
-======================================*/
-/* ==================================
-             Header area end
-======================================*/
-/* ==================================
-             Header area start
-======================================*/
-/* ==================================
-             Header area end
-======================================*/
-/* ==================================
-             Index Page end
-======================================*/
-/* ==================================
-             Index Page start
-======================================*/
-/* ==================================
-             Index Page end
-======================================*/
-/* ==================================
-             Index Page start
-======================================*/
-/* ==================================
-             Index Page end
-======================================*/
-/* ==================================
-             Index Page start
-======================================*/
-/* ==================================
-             Index Page end
-======================================*/
-/* ==================================
-             Index Page start
-======================================*/
-/* ==================================
-             Index Page end
-======================================*/
+#logo__area .cart__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#logo__area .cart__item span i {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #333;
+  background: #fff;
+  -webkit-transition: color 0.4s, border 0.4s;
+  transition: color 0.4s, border 0.4s;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+#logo__area .cart__item span p {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+#logo__area .cart__item span p span {
+  color: #336699;
+  font-weight: 600;
+}
+
+#logo__area .cart__item img {
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#logo__area .cart__button,
+#logo__area .checkout__button {
+  width: 45%;
+  border: 0;
+  padding: 5px 0;
+  border: 2px solid #eee;
+  outline: 0;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: color 0.3s, border-color 0.3s, background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#logo__area .cart__button:focus,
+#logo__area .checkout__button:focus {
+  outline: 0;
+  border-color: #2977d8;
+  background-color: #2977d8;
+}
+
+#logo__area .checkout__button {
+  color: #fff;
+  border-color: #2879fe;
+  background-color: #336699;
+}
+
+#logo__area .checkout__button:hover {
+  border-color: #2977d8;
+  background-color: #2977d8;
+}
+
+#logo__area .cart__button {
+  color: #2879fe;
+  border-color: #2879fe;
+  background-color: #fff;
+}
+
+#logo__area .cart__button:hover {
+  color: #fff;
+  border-color: #336699;
+  background-color: #336699;
+}
+
+/*
+
+            ======================================
+                        logo area End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area start
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area start
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area start
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area start
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Header area End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                       Index Page End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                         Index Page start
+            ======================================
+
+*/
+/*
+
+            ======================================
+                       Index Page End
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Index Page start
+            ======================================
+
+*/
+/*
+
+            ======================================
+                        Index Page End
+            ======================================
+
+*/
 /*# sourceMappingURL=style.css.map */
