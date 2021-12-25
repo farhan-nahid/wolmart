@@ -726,7 +726,7 @@ div {
   z-index: 60000000000000;
   background: #fff;
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
 }
