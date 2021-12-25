@@ -648,7 +648,7 @@ div {
 */
 #menu {
   height: 50px;
-  border: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 #menu .left__dropdown ul {
@@ -658,6 +658,7 @@ div {
 
 #menu .left__dropdown ul li {
   border-top: 1px solid #edeef0;
+  line-height: 40px;
 }
 
 #menu .left__dropdown ul li:nth-child(1) {
@@ -697,6 +698,7 @@ div {
   position: relative;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
+  border-top: 0 !important;
 }
 
 #menu .left__dropdown ul li .mega__drop__down ul li:hover .mega__menu {
@@ -734,7 +736,7 @@ div {
 #menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu {
   background-color: #fff;
   z-index: 60;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 #menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu h3 {
@@ -750,7 +752,8 @@ div {
 }
 
 #menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu ul li {
-  margin-left: 15px;
+  margin: 0 !important;
+  border-top: 0 !important;
 }
 
 #menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu ul li a {
@@ -766,6 +769,14 @@ div {
 
 #menu .left__dropdown ul .mega1__image {
   position: relative;
+  height: 100%;
+}
+
+#menu .left__dropdown ul .mega1__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #menu .left__dropdown ul .mega1__image .mega__overlay1 {
@@ -808,6 +819,12 @@ div {
 #menu .left__dropdown ul .mega1__image .mega__overlay1 button:hover i {
   -webkit-animation: 1s animated linear infinite;
           animation: 1s animated linear infinite;
+}
+
+.mega__drop__2 h3 {
+  font-size: 14px !important;
+  margin-bottom: 8px !important;
+  font-weight: 700 !important;
 }
 
 @-webkit-keyframes animated {

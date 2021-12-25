@@ -1,12 +1,13 @@
 #menu {
   height: 50px;
-  border: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   .left__dropdown {
     ul {
       background-color: #fff;
       line-height: 50px;
       li {
         border-top: 1px solid #edeef0;
+        line-height: 40px;
         &:nth-child(1) {
           border-top: 0;
         }
@@ -42,6 +43,7 @@
             li {
               position: relative;
               transition: all linear 0.3s;
+              border-top: 0 !important;
               &:hover {
                 .mega__menu {
                   opacity: 1;
@@ -73,7 +75,8 @@
                 .mega__left__drop__menu {
                   background-color: #fff;
                   z-index: 60;
-                  padding: 0 20px;
+                  padding: 20px;
+
                   h3 {
                     font-size: 20px;
                     border-bottom: 1px solid #edeef0;
@@ -84,11 +87,13 @@
                   ul {
                     background-color: #fff;
                     li {
-                      margin-left: 15px;
+                      margin: 0 !important;
+                      border-top: 0 !important;
                       a {
                         line-height: 30px;
                         font-size: 14px;
                         transition: all linear 0.3s;
+
                         &:hover {
                           color: #336699;
                         }
@@ -103,6 +108,12 @@
       }
       .mega1__image {
         position: relative;
+        height: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
         .mega__overlay1 {
           position: absolute;
           top: 20px;
@@ -141,6 +152,14 @@
         }
       }
     }
+  }
+}
+
+.mega__drop__2 {
+  h3 {
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+    font-weight: 700 !important;
   }
 }
 
