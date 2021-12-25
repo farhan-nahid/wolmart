@@ -1194,14 +1194,69 @@ div {
 /*
 
             ======================================
-                        Header area start
+                        slider area start
             ======================================
 
 */
+#slider {
+  z-index: -1;
+  position: relative;
+}
+
+#slider .slider__item1 {
+  padding: 70px 0;
+  background: url("../../images/slide1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#slider .slider__item2 {
+  padding: 70px 0;
+  background: url("../../images/slide-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#slider .slider__item3 {
+  padding: 70px 0;
+  background: url("../../images/slide-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#slider img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#slider button {
+  padding: 10px 25px;
+  background-color: #333;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
 /*
 
             ======================================
-                        Header area End
+                        slider area End
             ======================================
 
 */
