@@ -642,14 +642,198 @@ div {
 /*
 
             ======================================
-                        Header area start
+                      Mega Menu area start
             ======================================
 
 */
+#menu {
+  height: 50px;
+  border: 1px solid #ddd;
+}
+
+#menu .left__dropdown ul {
+  background-color: #fff;
+  line-height: 50px;
+}
+
+#menu .left__dropdown ul li {
+  border-top: 1px solid #edeef0;
+}
+
+#menu .left__dropdown ul li:nth-child(1) {
+  border-top: 0;
+}
+
+#menu .left__dropdown ul li:nth-child(12) a {
+  font-weight: 600 !important;
+  color: #369 !important;
+}
+
+#menu .left__dropdown ul li a {
+  color: #333;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: -0.1px;
+  color: #333333;
+  border-color: #eeeeee;
+}
+
+#menu .left__dropdown ul li a .icon1 {
+  margin: 0 10px 0 20px;
+}
+
+#menu .left__dropdown ul li a .abc {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li {
+  position: relative;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li:hover .mega__menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li a {
+  color: #333;
+  position: relative;
+  display: block;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li a .abc {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li .mega__menu {
+  position: absolute;
+  left: 106%;
+  width: 640px;
+  top: 0;
+  z-index: 60000000000000;
+  background: #fff;
+  opacity: 0;
+  visibility: none;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu {
+  background-color: #fff;
+  z-index: 60;
+  padding: 0 20px;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu h3 {
+  font-size: 20px;
+  border-bottom: 1px solid #edeef0;
+  margin-bottom: 15px;
+  color: #333;
+  padding-bottom: 8px;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu ul {
+  background-color: #fff;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu ul li {
+  margin-left: 15px;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu ul li a {
+  line-height: 30px;
+  font-size: 14px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li .mega__menu .mega__left__drop__menu ul li a:hover {
+  color: #336699;
+}
+
+#menu .left__dropdown ul .mega1__image {
+  position: relative;
+}
+
+#menu .left__dropdown ul .mega1__image .mega__overlay1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#menu .left__dropdown ul .mega1__image .mega__overlay1 h6 {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #333;
+}
+
+#menu .left__dropdown ul .mega1__image .mega__overlay1 h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+}
+
+#menu .left__dropdown ul .mega1__image .mega__overlay1 button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  color: #333;
+  padding: 0;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#menu .left__dropdown ul .mega1__image .mega__overlay1 button i {
+  font-size: 14px;
+  margin-left: 8px;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+#menu .left__dropdown ul .mega1__image .mega__overlay1 button:hover i {
+  -webkit-animation: 1s animated linear infinite;
+          animation: 1s animated linear infinite;
+}
+
+@-webkit-keyframes animated {
+  0%,
+  100% {
+    margin-left: 18px;
+  }
+  50% {
+    margin-left: 8px;
+  }
+}
+
+@keyframes animated {
+  0%,
+  100% {
+    margin-left: 18px;
+  }
+  50% {
+    margin-left: 8px;
+  }
+}
+
 /*
 
             ======================================
-                        Header area End
+                      Mega Menu area End
             ======================================
 
 */

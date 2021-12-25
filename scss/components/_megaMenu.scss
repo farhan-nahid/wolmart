@@ -1,0 +1,155 @@
+#menu {
+  height: 50px;
+  border: 1px solid #ddd;
+  .left__dropdown {
+    ul {
+      background-color: #fff;
+      line-height: 50px;
+      li {
+        border-top: 1px solid #edeef0;
+        &:nth-child(1) {
+          border-top: 0;
+        }
+        &:nth-child(12) {
+          a {
+            font-weight: 600 !important;
+            color: #369 !important;
+          }
+        }
+        a {
+          color: #333;
+          position: relative;
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: capitalize;
+          letter-spacing: -0.1px;
+          color: #333333;
+          border-color: #eeeeee;
+
+          .icon1 {
+            margin: 0 10px 0 20px;
+          }
+          .abc {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        .mega__drop__down {
+          ul {
+            li {
+              position: relative;
+              transition: all linear 0.3s;
+              &:hover {
+                .mega__menu {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+              a {
+                color: #333;
+                position: relative;
+                display: block;
+
+                .abc {
+                  position: absolute;
+                  right: 20px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+              }
+              .mega__menu {
+                position: absolute;
+                left: 106%;
+                width: 640px;
+                top: 0;
+                z-index: 60000000000000;
+                background: #fff;
+                opacity: 0;
+                visibility: none;
+                transition: all linear 0.3s;
+                .mega__left__drop__menu {
+                  background-color: #fff;
+                  z-index: 60;
+                  padding: 0 20px;
+                  h3 {
+                    font-size: 20px;
+                    border-bottom: 1px solid #edeef0;
+                    margin-bottom: 15px;
+                    color: #333;
+                    padding-bottom: 8px;
+                  }
+                  ul {
+                    background-color: #fff;
+                    li {
+                      margin-left: 15px;
+                      a {
+                        line-height: 30px;
+                        font-size: 14px;
+                        transition: all linear 0.3s;
+                        &:hover {
+                          color: #336699;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .mega1__image {
+        position: relative;
+        .mega__overlay1 {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          h6 {
+            font-size: 14px;
+            margin-bottom: 0;
+            color: #333;
+          }
+
+          h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            margin-top: 10px;
+          }
+          button {
+            background: transparent;
+            border: 0;
+            outline: 0;
+            font-size: 14px;
+            color: #333;
+            padding: 0;
+            transition: all linear 0.3s;
+            i {
+              font-size: 14px;
+              margin-left: 8px;
+              transition: all linear 0.3s;
+            }
+            &:hover {
+              i {
+                animation: 1s animated linear infinite;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animated {
+  0%,
+  100% {
+    margin-left: 18px;
+  }
+  50% {
+    margin-left: 8px;
+  }
+}
