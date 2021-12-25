@@ -682,6 +682,10 @@ div {
   border-color: #eeeeee;
 }
 
+#menu .left__dropdown ul li a:hover {
+  color: #336699;
+}
+
 #menu .left__dropdown ul li a .icon1 {
   margin: 0 10px 0 20px;
 }
@@ -710,6 +714,10 @@ div {
   color: #333;
   position: relative;
   display: block;
+}
+
+#menu .left__dropdown ul li .mega__drop__down ul li a:hover {
+  color: #336699;
 }
 
 #menu .left__dropdown ul li .mega__drop__down ul li a .abc {
@@ -819,6 +827,41 @@ div {
 #menu .left__dropdown ul .mega1__image .mega__overlay1 button:hover i {
   -webkit-animation: 1s animated linear infinite;
           animation: 1s animated linear infinite;
+}
+
+#menu .right__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu .right__nav li {
+  margin-right: 25px;
+  line-height: 50px;
+}
+
+#menu .right__nav li:nth-child(2) {
+  margin-right: 0;
+}
+
+#menu .right__nav a {
+  color: #333;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: -0.1px;
+  color: #333333;
+  border-color: #eeeeee;
+}
+
+#menu .right__nav a:hover {
+  color: #336699;
+}
+
+#menu .right__nav a i {
+  margin-right: 10px;
 }
 
 .mega__drop__2 h3 {

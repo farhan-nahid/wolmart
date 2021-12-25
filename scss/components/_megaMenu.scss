@@ -27,7 +27,9 @@
           letter-spacing: -0.1px;
           color: #333333;
           border-color: #eeeeee;
-
+          &:hover {
+            color: #336699;
+          }
           .icon1 {
             margin: 0 10px 0 20px;
           }
@@ -54,7 +56,9 @@
                 color: #333;
                 position: relative;
                 display: block;
-
+                &:hover {
+                  color: #336699;
+                }
                 .abc {
                   position: absolute;
                   right: 20px;
@@ -150,6 +154,33 @@
             }
           }
         }
+      }
+    }
+  }
+  .right__nav {
+    display: flex;
+    li {
+      margin-right: 25px;
+      line-height: 50px;
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+    a {
+      color: #333;
+      position: relative;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      letter-spacing: -0.1px;
+      color: #333333;
+      border-color: #eeeeee;
+      &:hover {
+        color: #336699;
+      }
+      i {
+        margin-right: 10px;
       }
     }
   }
