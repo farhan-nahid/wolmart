@@ -4,7 +4,8 @@
   height: 50px;
   border-top: 1px solid #ddd;
   .left__dropdown {
-    // z-index: 1000;
+    z-index: 1000;
+    position: relative;
     ul {
       background-color: #fff;
       line-height: 50px;
@@ -73,7 +74,7 @@
                 left: 105%;
                 width: 640px;
                 top: 0;
-                z-index: 60000000000000;
+                z-index: 10;
                 background: #fff;
                 opacity: 0;
                 visibility: hidden;
@@ -81,9 +82,9 @@
                 .mega__left__drop__menu {
                   background-color: #fff;
                   z-index: 60;
-
+                  padding: 20px;
                   h3 {
-                    @include fontStyle(20px, #333, 400, 'Poppins');
+                    @include fontStyle(14px, #333, 700, 'Poppins');
                     border-bottom: 1px solid #edeef0;
                     margin-bottom: 15px;
                     padding-bottom: 8px;
@@ -139,9 +140,10 @@
             padding: 0;
             transition: all linear 0.3s;
             i {
-              @include fontStyle(14px, #333, 400, 'Poppins');
+              // @include fontStyle(14px, #333, 400, 'Font Awesome 5 Free');
               margin-left: 8px;
               transition: all linear 0.3s;
+              font-size: 14px;
             }
             &:hover {
               i {
@@ -228,6 +230,7 @@
         visibility: hidden;
         transition: all linear 0.3s;
         padding: 0 10px;
+        z-index: 101;
         h5 {
           @include fontStyle(14px, #333, 600, 'Poppins');
           margin: 15px 0;
@@ -264,6 +267,7 @@
         opacity: 0;
         visibility: hidden;
         transition: all linear 0.3s;
+        z-index: 101;
         h5 {
           @include fontStyle(14px, #333, 600, 'Poppins');
           margin: 15px 0;
@@ -291,7 +295,7 @@
         opacity: 0;
         visibility: hidden;
         transition: all linear 0.3s;
-
+        z-index: 101;
         ul {
           li {
             line-height: 30px;
@@ -350,7 +354,7 @@
         opacity: 0;
         visibility: hidden;
         transition: all linear 0.3s;
-
+        z-index: 101;
         ul {
           li {
             line-height: 30px;
@@ -402,11 +406,16 @@
 }
 
 @keyframes animated {
-  0%,
-  100% {
-    margin-left: 18px;
+  0% {
+    margin-top: 13px;
   }
   50% {
+    margin-left: 18px;
+  }
+  70% {
+    margin-left: 13px;
+  }
+  100% {
     margin-left: 8px;
   }
 }
